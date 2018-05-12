@@ -1,0 +1,10 @@
+[Unit]
+Description=Starts 65 pts loopback at /run/nullmodem/loop0-63
+# StopWhenUnneeded=true
+
+[Service]
+ExecStartPre=-/bin/mkdir /run/nullmodem/
+ExecStartPre=/bin/rm -f /run/nullmodem/*
+ExecStart=/usr/local/bin/nullmodem -Frm /run/nullmodem/loop0 /run/nullmodem/loop1 /run/nullmodem/loop2 /run/nullmodem/loop3 /run/nullmodem/loop4 /run/nullmodem/loop5 /run/nullmodem/loop6 /run/nullmodem/loop7 /run/nullmodem/loop8 /run/nullmodem/loop9 /run/nullmodem/loop10 /run/nullmodem/loop11 /run/nullmodem/loop12 /run/nullmodem/loop13 /run/nullmodem/loop14 /run/nullmodem/loop15 /run/nullmodem/loop16 /run/nullmodem/loop17 /run/nullmodem/loop18 /run/nullmodem/loop19 /run/nullmodem/loop20 /run/nullmodem/loop21 /run/nullmodem/loop22 /run/nullmodem/loop23 /run/nullmodem/loop24 /run/nullmodem/loop25 /run/nullmodem/loop26 /run/nullmodem/loop27 /run/nullmodem/loop28 /run/nullmodem/loop29 /run/nullmodem/loop30 /run/nullmodem/loop31 /run/nullmodem/loop32 /run/nullmodem/loop33 /run/nullmodem/loop34 /run/nullmodem/loop35 /run/nullmodem/loop36 /run/nullmodem/loop37 /run/nullmodem/loop38 /run/nullmodem/loop39 /run/nullmodem/loop40 /run/nullmodem/loop41 /run/nullmodem/loop42 /run/nullmodem/loop43 /run/nullmodem/loop44 /run/nullmodem/loop45 /run/nullmodem/loop46 /run/nullmodem/loop47 /run/nullmodem/loop48 /run/nullmodem/loop49 /run/nullmodem/loop50 /run/nullmodem/loop51 /run/nullmodem/loop52 /run/nullmodem/loop53 /run/nullmodem/loop54 /run/nullmodem/loop55 /run/nullmodem/loop56 /run/nullmodem/loop57 /run/nullmodem/loop58 /run/nullmodem/loop59 /run/nullmodem/loop60 /run/nullmodem/loop61 /run/nullmodem/loop62 /run/nullmodem/loop63 /run/nullmodem/loop64 
+Restart=always
+

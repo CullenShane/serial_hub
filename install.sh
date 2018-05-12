@@ -9,8 +9,8 @@ sudo make install
 
 sudo apt install socat
 sudo cp 01-ttyACM.rules /etc/udev/rules.d/
-sudo cp attach-tty@.service /etc/systemd/system/
-# TODO: make another service for nullmodem
+sudo cp attach-tty@.service /lib/systemd/system/
+sudo cp nullmodem.service /lib/systemd/system
 
 sudo systemctl daemon-reload
 
