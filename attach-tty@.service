@@ -1,0 +1,7 @@
+[Unit]
+Description=Connectng /dev/ttyACM%I to nullmodem
+BindsTo=dev-ttyACM%i.device
+
+[Service]
+ExecStart=@/usr/bin/socat attach-tty -dx /tmp/loop%I /dev/ttyACM%I
+Restart=always

@@ -1,0 +1,1 @@
+ACTION=="add", ENV{DEVNAME}=="/dev/ttyACM[0-9]*", SUBSYSTEM=="tty", TAG+="systemd", ENV{SYSTEMD_WANTS}="attach-tty@%n.service"
