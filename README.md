@@ -13,7 +13,7 @@ hopefully your devices you're plugging in have some sort of reasonable default s
 
 ## Turning it off
 
-¯\_(ツ)_/¯
+¯\\_(ツ)_/¯
 (Probably the install.sh can give some hints)
 
 # Have fun!
